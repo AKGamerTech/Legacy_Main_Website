@@ -93,6 +93,11 @@ main {
     color: white;
 }
 
+.section-link{
+    color: white;
+    text-decoration: underline;
+}
+
 .project-list {
     display: flex;
     flex-direction: column;
