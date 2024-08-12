@@ -1,3 +1,6 @@
 [submodule "RESATURATED"]
 	path = RESATURATED
 	url = https://github.com/AKGamerTech/ANWC-Resaturated-Standalone
+[submodule "NewZyro_Games"]
+	path = NewZyro_Games
+	url = https://github.com/AKGamerTech/NewZyro_Games-Standalone
