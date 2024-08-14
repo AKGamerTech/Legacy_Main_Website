@@ -7,3 +7,6 @@
 [submodule "RESATURATED-Old"]
 	path = RESATURATED-Old
 	url = https://github.com/AKGamerTech/ANWC-Resaturated-Old
+[submodule "Links-List"]
+	path = Links-List
+	url = https://github.com/AKGamerTech/Links-List
