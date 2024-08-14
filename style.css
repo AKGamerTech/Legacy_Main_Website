@@ -94,7 +94,7 @@ main {
     color: white;
 }
 
-.section-link{
+a{
     color: white;
     text-decoration: underline;
 }
