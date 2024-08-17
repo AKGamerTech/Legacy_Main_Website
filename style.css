@@ -2,13 +2,48 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: rgb(20, 20, 20);
-    background-attachment: fixed;
-    color: white;
+    background-color: #13005A; /* Navy Blue */
+    color: #FFFFFF; /* White text for contrast */
+    font-family: 'Helvetica', 'Arial', sans-serif; /* Sans-serif font */
+    line-height: 1.6;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    vertical-align: top;
+    justify-content: left;
+    color: #FFFFFF; /* White text */
+    margin: 1vb;
+}
+
+p {
+    margin: 2vb;
+    margin-bottom: 0;
+    color: #D3D3D3; /* Light gray text for a softer look */
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 100);
+
+
+}
+
+a:hover {
+
+    text-decoration: none;
+    background-color: rgb(0, 0, 150);
+
+
+}
+
+
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #00337C;
     padding: 10px;
     position: fixed;
     width: 100%;
@@ -29,31 +64,9 @@ nav ul li {
     color: white;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(10, 10,10);
+    padding: 5px;
 
 }
-
-
-nav ul li:hover {
-    border-radius: 20px;
-    background-color: rgb(30, 30,30);
-
-    text-decoration: underline;
-}
-
-
-
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    padding: 10px;
-    border-radius: 10px;
-}
-
 
 main {
     padding: 20px;
@@ -64,11 +77,58 @@ main {
     display: block;
 }
 
+.resume {
+    display: block;
+    flex-direction: row;
+    align-items: left;
+    margin: 1em 5%;
+    background-color: rgb(0, 0, 60);
+    border-radius: 20px;
+    padding: 20px;
+    filter: blur(0px);
+    backdrop-filter: blur(20px); /* For supported browsers */
+    margin: 1em 10%;
+}
+
+.resume-item {
+    display: block;
+}
+
+.section-details {
+    display: flex;
+    flex-direction: row; /* Change to column to stack elements vertically */
+}
+
+.section-details-item-tittle {
+    width: 12vw;
+    display: block;
+    margin: 3vb;
+}
+
+.section-details-item {
+    display: block;
+    margin: 3vb;
+}
+
+.section-details-item h2 {
+    display: inline-block; /* Ensure the heading and hr are treated together */
+    margin-right: 1em; /* Add some space between the heading and hr */
+}
+
+.section-details-item hr {
+    width: 100%; /* Full width within the available space */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: none;
+    border-top: 1px solid #fff; /* Adjust this to match your desired style */
+    flex-grow: 1; /* Allow hr to take up remaining space */
+}
+
 .section-content {
     display: flex;
     align-items: left;
     margin: 1em 5%;
-    background-color: rgba(50, 50, 50, 0.6);
+    background-color: #00337C;
     border-radius: 20px;
     padding: 20px;
     filter: blur(0px);
@@ -82,19 +142,4 @@ main {
     height: 100px;
     width: 100px;
     border-radius: 20px;
-}
-
-.section-content h2 {
-    margin-top: 0;
-    color: white;
-}
-
-.section-content p {
-    margin-top: 5px;
-    color: white;
-}
-
-a{
-    color: white;
-    text-decoration: underline;
 }
