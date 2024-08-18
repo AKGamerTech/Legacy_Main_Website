@@ -2,8 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #13005A; /* Navy Blue */
-    color: #FFFFFF; /* White text for contrast */
+    background-color:rgb(58, 16, 120);
+    background: radial-gradient(
+        circle,
+        #7C00FE 0%,
+        #4E31AA 50%,
+        #3A1078 100%
+      )
+      center center / cover no-repeat fixed;    color: #FFFFFF; /* White text for contrast */
     font-family: 'Helvetica', 'Arial', sans-serif; /* Sans-serif font */
     line-height: 1.6;
 }
@@ -28,28 +34,30 @@ a {
     transition: all 0.3s ease-in-out;
     padding: 10px;
     border-radius: 10px;
-    background-color: rgb(0, 0, 100);
+    background-color: rgba(0, 34, 77, 0.6);
+    border-color: #4E31AA;
+    outline: solid #4E31AA 2px;
 
 
 }
 
 a:hover {
-
     text-decoration: none;
-    background-color: rgb(0, 0, 150);
-
-
+    background-color: #7C00FE;
+    outline: solid #4E31AA 5px;
 }
 
 
 nav {
-    background-color: #00337C;
+    background-color: #3A1078;
     padding: 10px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    outline: solid #4E31AA 5px;
+
 }
 
 nav ul {
@@ -78,11 +86,13 @@ main {
 }
 
 .resume {
+    outline: solid #4E31AA 5px;
+
     display: block;
     flex-direction: row;
     align-items: left;
     margin: 1em 5%;
-    background-color: rgb(0, 0, 60);
+    background-color: #3A1078;
     border-radius: 20px;
     padding: 20px;
     filter: blur(0px);
@@ -127,14 +137,22 @@ main {
 .section-content {
     display: flex;
     align-items: left;
-    margin: 1em 5%;
-    background-color: #00337C;
+    margin: 1em 10%;
+    background-color: #3A1078;
     border-radius: 20px;
     padding: 20px;
     filter: blur(0px);
     backdrop-filter: blur(20px); /* For supported browsers */
     margin: 1em 10%;
+    grid-auto-flow: column;
+    align-items: center; /* Aligns items vertically center */
+    outline: solid #4E31AA 5px;
+    
 
+}
+
+.section-main{
+    padding: 1px 0;
 }
 
 .section-content img.section-image {
@@ -142,4 +160,6 @@ main {
     height: 100px;
     width: 100px;
     border-radius: 20px;
+    outline: solid #4E31AA 5px;
+
 }
